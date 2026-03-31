@@ -8,6 +8,13 @@ import {
   Smartphone, Bell, FileText, Brain, Bot, Zap, Cpu,
   Scan, TrendingUp, PieChart, Network
 } from "lucide-react";
+import featureStudentImg from "@/assets/feature-student-management.jpg";
+import featureAttendanceImg from "@/assets/feature-attendance.jpg";
+import featureGradebookImg from "@/assets/feature-gradebook.jpg";
+import featureFeeImg from "@/assets/feature-fee-management.jpg";
+import featureCommunicationImg from "@/assets/feature-communication.jpg";
+import featureSchedulingImg from "@/assets/feature-scheduling.jpg";
+import featureAnalyticsImg from "@/assets/feature-analytics.jpg";
 
 const featureSections = [
   {
