@@ -8,6 +8,13 @@ import {
   Smartphone, Bell, FileText, Brain, Bot, Zap, Cpu,
   Scan, TrendingUp, PieChart, Network
 } from "lucide-react";
+import featureStudentImg from "@/assets/feature-student-management.jpg";
+import featureAttendanceImg from "@/assets/feature-attendance.jpg";
+import featureGradebookImg from "@/assets/feature-gradebook.jpg";
+import featureFeeImg from "@/assets/feature-fee-management.jpg";
+import featureCommunicationImg from "@/assets/feature-communication.jpg";
+import featureSchedulingImg from "@/assets/feature-scheduling.jpg";
+import featureAnalyticsImg from "@/assets/feature-analytics.jpg";
 
 const featureSections = [
   {
@@ -15,42 +22,49 @@ const featureSections = [
     desc: "AI-powered student profiles with enrollment automation, predictive academic tracking, and intelligent record management.",
     highlights: ["AI enrollment screening", "Smart profile enrichment", "Academic trajectory prediction", "Automated parent portal"],
     aiFeature: "AI auto-generates student risk profiles from 40+ behavioral signals",
+    image: featureStudentImg,
   },
   {
     icon: Scan, title: "Smart Attendance", variant: "blue",
     desc: "Facial recognition and geo-fenced check-ins with anomaly detection and automated parent notifications.",
     highlights: ["Facial recognition", "Real-time parent alerts", "Anomaly detection", "Attendance forecasting"],
     aiFeature: "Predicts absenteeism patterns 2 weeks in advance with 91% accuracy",
+    image: featureAttendanceImg,
   },
   {
     icon: BookOpen, title: "AI Gradebook", variant: "green",
     desc: "Intelligent grading with NLP-powered feedback, auto-generated report cards, and performance clustering.",
     highlights: ["NLP feedback generation", "Auto-grading engine", "Performance clustering", "Adaptive assessments"],
     aiFeature: "Generates personalized improvement plans for every student automatically",
+    image: featureGradebookImg,
   },
   {
     icon: CreditCard, title: "Fee Management", variant: "amber",
     desc: "Predictive collection analytics, smart reminders, automated reconciliation, and payment gateway integration.",
     highlights: ["Collection prediction", "Smart reminders", "Auto-reconciliation", "Multi-gateway support"],
     aiFeature: "Predicts defaulters 30 days ahead and auto-triggers escalation workflows",
+    image: featureFeeImg,
   },
   {
     icon: MessageSquare, title: "Communication Hub", variant: "purple",
     desc: "AI-drafted announcements with sentiment analysis, smart routing, and multi-channel delivery.",
     highlights: ["AI draft generation", "Sentiment analysis", "Smart routing", "Multi-channel delivery"],
     aiFeature: "AI writes personalized parent messages in 12 languages with cultural context",
+    image: featureCommunicationImg,
   },
   {
     icon: Calendar, title: "Smart Scheduling", variant: "blue",
     desc: "Constraint-based AI scheduler with room optimization, conflict resolution, and substitute management.",
     highlights: ["AI optimization", "Conflict detection", "Room allocation", "Substitute matching"],
     aiFeature: "Reduces scheduling conflicts by 95% — solves in seconds what takes hours manually",
+    image: featureSchedulingImg,
   },
   {
     icon: BarChart3, title: "Analytics Command Center", variant: "green",
     desc: "Real-time dashboards with predictive insights, anomaly detection, and natural language querying.",
     highlights: ["Predictive insights", "Natural language queries", "Custom dashboards", "Exportable reports"],
     aiFeature: "Ask questions in plain English — AI generates reports and visualizations instantly",
+    image: featureAnalyticsImg,
   },
 ];
 
@@ -118,9 +132,8 @@ const Features = () => {
                   </div>
                 </div>
                 <div className={i % 2 === 1 ? "lg:order-1" : ""}>
-                  <div className={`card-${feature.variant} stripe-${feature.variant} rounded-2xl border p-10 min-h-[280px] flex items-center justify-center relative overflow-hidden`}>
-                    <div className="absolute inset-0 dot-pattern opacity-20" />
-                    <feature.icon className="w-20 h-20 text-muted-foreground/20 relative z-10" />
+                  <div className="rounded-2xl border overflow-hidden shadow-lg">
+                    <img src={feature.image} alt={feature.title} loading="lazy" width={1024} height={768} className="w-full h-auto object-cover" />
                   </div>
                 </div>
               </div>
