@@ -137,7 +137,6 @@ const Features = () => {
                   </div>
                 </div>
               </div>
-            </div>
               {i < featureSections.length - 1 && <div className="section-divider mt-20" />}
             </div>
           ))}
