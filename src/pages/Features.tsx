@@ -132,12 +132,12 @@ const Features = () => {
                   </div>
                 </div>
                 <div className={i % 2 === 1 ? "lg:order-1" : ""}>
-                  <div className={`rounded-2xl border overflow-hidden shadow-lg`}>
+                  <div className="rounded-2xl border overflow-hidden shadow-lg">
                     <img src={feature.image} alt={feature.title} loading="lazy" width={1024} height={768} className="w-full h-auto object-cover" />
                   </div>
                 </div>
-                </div>
               </div>
+            </div>
               {i < featureSections.length - 1 && <div className="section-divider mt-20" />}
             </div>
           ))}
