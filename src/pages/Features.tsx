@@ -132,10 +132,10 @@ const Features = () => {
                   </div>
                 </div>
                 <div className={i % 2 === 1 ? "lg:order-1" : ""}>
-                  <div className={`card-${feature.variant} stripe-${feature.variant} rounded-2xl border p-10 min-h-[280px] flex items-center justify-center relative overflow-hidden`}>
-                    <div className="absolute inset-0 dot-pattern opacity-20" />
-                    <feature.icon className="w-20 h-20 text-muted-foreground/20 relative z-10" />
+                  <div className={`rounded-2xl border overflow-hidden shadow-lg`}>
+                    <img src={feature.image} alt={feature.title} loading="lazy" width={1024} height={768} className="w-full h-auto object-cover" />
                   </div>
+                </div>
                 </div>
               </div>
               {i < featureSections.length - 1 && <div className="section-divider mt-20" />}
