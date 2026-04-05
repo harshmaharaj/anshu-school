@@ -44,7 +44,7 @@ const tiers = [
     name: "Enterprise",
     desc: "Unlimited scale with dedicated AI models",
     monthlyPrice: null, yearlyPrice: null,
-    cta: "Contact Sales", popular: false, variant: "green",
+    cta: "Contact Sales", popular: false, variant: "red",
     features: [
       { name: "Unlimited students", included: true },
       { name: "All Professional features", included: true },
@@ -161,7 +161,7 @@ const Pricing = () => {
             {[
               { plan: "Starter", items: ["Basic attendance AI", "Simple report generation", "Email notifications"], icon: Zap, variant: "blue" },
               { plan: "Professional", items: ["Predictive analytics", "NLP feedback engine", "Smart scheduling", "Sentiment analysis", "AI-drafted comms"], icon: Brain, variant: "purple" },
-              { plan: "Enterprise", items: ["Custom AI models", "Natural language queries", "Multi-branch AI", "Priority processing", "Dedicated ML pipeline"], icon: Sparkles, variant: "green" },
+              { plan: "Enterprise", items: ["Custom AI models", "Natural language queries", "Multi-branch AI", "Priority processing", "Dedicated ML pipeline"], icon: Sparkles, variant: "red" },
             ].map((tier, i) => (
               <div key={i} className={`card-${tier.variant} stripe-${tier.variant} rounded-2xl border p-6 relative overflow-hidden`}>
                 <div className="absolute inset-0 dot-pattern opacity-15" />
